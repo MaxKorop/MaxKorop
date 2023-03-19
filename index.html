@@ -125,14 +125,29 @@
         <section>
             <img src="img\home-pic5 1.png" alt="ice cream pics">
             <!--Карусель-->
-            <img src="img\testimonials1 1.png" alt="">
-            <p><span>"</span>Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit <br> nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
-            <span>...</span>
+            <div id="coment1" class="active">
+                <img src="img\testimonials1 1.png" alt="">
+                <p><span>"</span>Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit <br> nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
+                <span>Emily, Los Angeles </span>
+                <span>...</span>
+            </div>
+            <div id="coment2" class="off">
+                <img src="img\testimonials1 2.png" alt="">
+                <p><span>"</span>Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit <br> nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
+                <span>Jessi, New York </span>
+                <span>...</span>
+            </div>
+            <div id="coment3" class="off">
+                <img src="img\testimonials2 1.png" alt="">
+                <p><span>"</span>Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit <br> nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
+                <span>Lily, Chicago </span>
+                <span>...</span>
+            </div>
             <!--btns-->
-            <div>
-                <div><img src="img\home 1.png" alt="home btn"></div>
-                <div></div>
-                <div></div>
+            <div class="btnSl">
+                <div id="btnSl1" class="active_btn" onclick="funcBtn('1')"><img src="img\home 1.png" alt="home btn" ></div>
+                <div id="btnSl2" class="nactive_btn" onclick="funcBtn('2')">.</div>
+                <div id="btnSl3" class="nactive_btn" onclick="funcBtn('3')">.</div>
             </div>
         </section>
         
@@ -190,6 +205,56 @@
                 <span>Feel free to contact <span>+61 (0) 383 766 284</span></span>
             </div>
         </div>
-    </footer>    
+    </footer> 
+    <style>
+        .off {
+            display: none;
+        }
+        .active {
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
+        }
+        
+    </style>   
+    <script>
+        function funcBtn(btnWchPress){
+            console.log(btnWchPress)
+            let btn1 = document.getElementById ("btnSl1") 
+            let btn2 = document.getElementById ("btnSl2")
+            let btn3 = document.getElementById ("btnSl3")
+            let com1 = document.getElementById ("coment1")
+            let com2 = document.getElementById ("coment2")
+            let com3 = document.getElementById ("coment3")
+            if (btnWchPress=='1' ){
+                //com1.style.opacity = 0
+                com1.setAttribute("class","active")
+                com2.setAttribute("class","off")
+                com3.setAttribute("class","off")
+                btn1.innerHTML= '<img src="img\\home 1.png" alt="home btn" >'
+                btn2.innerHTML= '.'
+                btn3.innerHTML= '.'
+            }
+            if (btnWchPress=='2' ){
+                //com2.style.opacity = 0
+                com1.setAttribute("class","off")
+                com2.setAttribute("class","active")
+                com3.setAttribute("class","off")
+                btn1.innerHTML= '.'
+                btn2.innerHTML= '<img src="img\\home 1.png" alt="home btn" >'
+                btn3.innerHTML= '.'
+            }
+            if (btnWchPress=='3' ){
+                //com3.style.opacity = 0
+                com1.setAttribute("class","off")
+                com2.setAttribute("class","off")
+                com3.setAttribute("class","active")
+                btn1.innerHTML= '.'
+                btn2.innerHTML= '.'
+                btn3.innerHTML= '<img src="img\\home 1.png" alt="home btn" >'
+            }
+            
+        }
+        
+    </script>
 </body>
 </html>
