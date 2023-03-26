@@ -1,3 +1,58 @@
+#sect_1{
+    background-color: #FFF;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div [ class*="card" ]{
+    display: flex;
+}
+
+.card_1 > div{
+    border-radius: 2%;
+    height: 70%;
+    background-color: #FFB8CA;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10%;
+}
+
+.card_2 > div{
+    border-radius: 2%;
+    height: 100%;
+    background: #F0D1A5;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10%;
+}
+
+.card_3 > div{
+    border-radius: 2%;
+    height: 70%;
+    background-color: #C2E297;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10%;
+}
+
+.crcl_btn{
+    border-radius: 50%;
+    background-color: #070606;
+    width: 5%;
+    height: 5%;
+}
+
+.crcl_btn > a{
+    text-decoration: none;
+    color: #cf3159;
+}
 
 .pinc_big_text{
     left: 50%;
