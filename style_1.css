@@ -3,43 +3,68 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    top: 665px;
+    position: absolute;
+    margin: 100px;
 }
 
-div [ class*="card" ]{
-    display: flex;
+div[class*="card"]{
+    display: block;
+    width: 335px;
+    height: 735px;
+    position: absolute;
+    top: 956px;
+    padding: 0;
+}
+
+[class*="card_img"]{
+    width: 335px;
+    height: 335px;
+    position: absolute;
+    top: 956px;
+}
+
+.card_img_1{
+    left: 114px;
+}
+
+.card_img_2{
+    left: 473px;
+}
+
+.card_img_3{
+    left: 833px;
 }
 
 .card_1 > div{
     border-radius: 2%;
-    height: 70%;
     background-color: #FFB8CA;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 10%;
+    position: absolute;
+    width: 329px;
+    height: 525px;
+    left: 117px;
+    top: 1166px;
 }
 
 .card_2 > div{
     border-radius: 2%;
-    height: 100%;
     background: #F0D1A5;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 10%;
+    position: absolute;
+    width: 330px;
+    height: 525px;
+    left: 475px;
+    top: 1166px;
 }
 
 .card_3 > div{
     border-radius: 2%;
-    height: 70%;
     background-color: #C2E297;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 10%;
+    position: absolute;
+    width: 329px;
+    height: 525px;
+    left: 835px;
+    top: 1166px;
 }
 
 .crcl_btn{
@@ -54,8 +79,10 @@ div [ class*="card" ]{
     color: #cf3159;
 }
 
-.pinc_big_text{
-    left: 50%;
+.pinc_big_text[id="sect_1_span_1"]{
+    position: absolute;
+    left: 515px;
+    top: 792px;
     font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
@@ -67,8 +94,10 @@ div [ class*="card" ]{
 
     color: #FFA5BA;
 }
-.red_bigger_txt{
-    left: 50%;
+.red_bigger_txt[id="sect_1_span_2"]{
+    position: absolute;
+    left: 464px;
+    top: 841px;
     font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
