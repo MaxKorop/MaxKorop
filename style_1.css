@@ -11,14 +11,14 @@
 
 #cards{
     width: 100%;
-    height: auto;
+    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-around;
 }
 
-[class$="card"]{
+.card{
     display: block;
     width: 28%;
     height: 100%;
@@ -26,30 +26,47 @@
 }
 
 .card_img{
+    position: relative;
+    top: 3.5rem;
     width: 100%;
     height: 64.5%;
 }
 
-.inner_div{
-    width: 100%;
-    height: 100%;
-    border-radius: 2%;
+[class*="inner_div"]{
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.card_1 > .inner_div{
+.card > .inner_div_1{
+    width: 100%;
+    height: 100%;
     background-color: #FFB8CA;
 }
 
-.card_2 > .inner_div{
+.card > .inner_div_2{
+    width: 100%;
+    height: 100%;
     background: #F0D1A5;
 }
 
-.card_3 > .inner_div{
+.card > .inner_div_3{
+    width: 100%;
+    height: 100%;
     background-color: #C2E297;
+}
+
+.inner_2_div_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .crcl_btn{
     border-radius: 50%;
+    width: 10%;
+    height: 10%;
     background-color: #fff;
 }
 
@@ -83,7 +100,7 @@
     color: #D41443;
 }
 
-.inner_div > p{
+[class*="inner_div"] p{
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
@@ -97,7 +114,7 @@
     color: #FFFFFF;
 } 
 
-.inner_div > span{
+[class*="inner_div"] span{
     font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
@@ -106,6 +123,6 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    margin-left: 25%;
+    margin-top: 5%;
     color: #FFFFFF;
 }
