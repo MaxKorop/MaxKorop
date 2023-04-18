@@ -2,6 +2,7 @@
     background-color: #FFF;
     margin: 0;
     padding: 0;
+    padding-top: 5%;
     width: 100%;
     height: auto;
     display: flex;
@@ -57,16 +58,19 @@
     background-color: #C2E297;
 }
 
-.inner_2_div_1{
+[class*="inner_2_div"]{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 10%;
+    padding-top: 15%;
 }
 
-.crcl_btn{
+#sect_1 .crcl_btn{
     border-radius: 50%;
-    width: 10%;
-    height: 10%;
+    width: 11%;
+    height: auto;
+    margin-left: 43%;
     background-color: #fff;
 }
 
