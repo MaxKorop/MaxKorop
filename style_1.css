@@ -4,7 +4,7 @@
     padding: 0;
     padding-top: 5%;
     width: 100%;
-    height: auto;
+    height: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,6 +17,7 @@
     align-items: center;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 7%;
 }
 
 .card{
@@ -79,7 +80,7 @@
     color: #cf3159;
 }
 
-.pinc_big_text[id="sect_1_span_1"]{
+.pinc_big_text{
     font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
