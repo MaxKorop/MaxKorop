@@ -1,0 +1,48 @@
+#sect_3>img{
+    width: 100%;
+}
+
+.Sect_3_content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+    font-family: 'DM Sans', sans-serif ;
+}
+
+[id*="coment"]{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+[id*="coment"]>img{
+    margin-bottom: 7%;
+}
+[id*="coment"]>p{
+    font-weight: 500;
+}
+.btnSl {
+    width: 5%;
+    display: flex;
+    align-items:center;
+    flex-direction: row;
+    margin-top: 2%;
+}
+.crclBtn{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+}
+.btnSl>div {
+    margin-right:10% ;
+    margin-left:10%;
+}
+.triple_d{
+    color:#C7133E;
+    font-size: 40px;
+}
+.coment_city{
+    font-weight: bold;
+    font-size: 20px;
+}
