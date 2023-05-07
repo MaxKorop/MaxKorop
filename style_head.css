@@ -5,11 +5,8 @@ body{
 header{
     display: block;
     width: 100%;
-    height: auto;
     background-color: #FFB8CA;
-    background-image: url('img//Group 40.png');
-    background-size: auto;
-    background-position-x: 50%;
+    /* background-image: url('img//Group 40.png'); */
     
 }
 .menu{
@@ -58,6 +55,7 @@ header{
 }
 nav{
     width: 60%;
+    z-index: 2;
 }
 nav>span{
     padding-left: 4%;
@@ -78,13 +76,19 @@ nav>span>a:hover{
 
 .header_scndl{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
     padding-top: 3%;
+}
+#header_cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
 }
 .header_info_txt{
     margin-left: 10%;
-    width: 55%;
+    /* width: 40%; */
 }
 .header_info_txt>div{
     padding-top: 3%;
@@ -118,7 +122,7 @@ nav>span>a:hover{
 }
 .cafes_and_ft{
     margin-top: 1%;
-    margin-right: 15%;
+    /* margin-right: 15%; */
     display: flex;
     flex-direction: column;
     align-items:flex-end;
@@ -128,15 +132,28 @@ nav>span>a:hover{
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        z-index: 2;
+}
+.white_crcl{
+
+    position: relative;
+    bottom: 12%;
+    left: 5%;
+    z-index: 1;
+    background-color: white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
 }
 .third_layer_milk{
-    padding-top: 5%;
+    padding-top: 3%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
+    padding-right: 7%;
 }
 .tlmilk{
-    width: 50%;
+    width: 100%;
     font-family: 'DM Sans', sans-serif ;
     text-decoration: none;
     color: white;
@@ -145,7 +162,29 @@ nav>span>a:hover{
     flex-direction: row;
     align-items: center;
     padding-right: 4%;
+    /* position: relative;
+    bottom: 10%; */
 }
 .tlmilk>div{
     padding-right: 7%;
+}
+#half_header{
+    display: flex;
+    flex-direction: row;
+    
+}
+#big_ice_cream{
+    
+    width: 110%;
+    height: 110%;
+    position: relative;
+    z-index: 0;
+    
+    bottom: 10%;
+}
+
+    
+#milk_grl{
+    position:relative;
+    top: 26.8%;
 }

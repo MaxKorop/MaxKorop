@@ -9,6 +9,12 @@
     flex-direction: column;
     align-items: center;
 }
+#sect_1>div{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 #cards{
     width: 100%;
@@ -67,7 +73,7 @@
     padding-top: 15%;
 }
 
-#sect_1 .crcl_btn{
+.crcl_btn{
     border-radius: 50%;
     width: 11%;
     height: auto;
