@@ -12,13 +12,12 @@ body{
     position: fixed;
     font-size: 45px;
     font-weight: bold;
-    width: 5%;
-    height: 10%;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     background-color: #FFA5BA;
     text-align: center;
-    transform: rotate(-90deg);
-    box-shadow: -0.4em 0 0.5em 0.25em lightgrey;
+    box-shadow: 0 0.4em 0.5em 0.25em lightgrey;
     transition: opacity 1s ease;
     
 }
@@ -35,7 +34,7 @@ body{
     color: white;
     text-decoration: none;
     position: relative;
-    top:17%;
+    top:25%;
     margin: auto;
 }
 header{
@@ -189,7 +188,7 @@ nav>span>a:hover{
     padding-right: 7%;
 }
 .tlmilk{
-    width: 100%;
+    /* width: 100%; */
     font-family: 'DM Sans', sans-serif ;
     text-decoration: none;
     color: white;

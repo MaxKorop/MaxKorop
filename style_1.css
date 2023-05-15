@@ -24,23 +24,25 @@
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 7%;
+    flex-wrap: wrap;
 }
 
 .card{
     display: block;
     width: 28%;
     height: 100%;
-    padding: 0;
+    padding-top: 4%;
 }
 
 .card_img{
     position: relative;
-    top: 3.5rem;
+    top: 7.5rem;
     width: 100%;
     height: 64.5%;
 }
 
 [class*="inner_div"]{
+    padding-top: 25%;
     border-radius: 5%;
     display: flex;
     flex-direction: column;
@@ -69,19 +71,22 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 10%;
     padding-top: 15%;
 }
 
 .crcl_btn{
     border-radius: 50%;
-    width: 11%;
-    height: auto;
-    margin-left: 43%;
+    width: 40px;
+    height: 40px;
+    /* margin-left: 43%; */
     background-color: #fff;
 }
 
 .crcl_btn > a{
+    position: relative;
+    top: 7%;
     text-decoration: none;
     color: #cf3159;
 }
