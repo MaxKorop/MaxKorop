@@ -111,3 +111,90 @@
         font-family: 'DM Sans', sans-serif;
     }
 }
+@media screen and (max-width: 768px){
+    .pinc_big_text{
+        text-align: center;
+        font-size: 18px;
+    }
+    .red_bigger_txt{
+        width: 50%;
+        text-align: center;
+        font-size: 34px;
+    }
+    .img_milk{
+        /* display: none; */
+        position: relative;
+        top: 700px;
+        width: 100%;
+    }
+    .img_cow{
+        position: relative;
+        bottom: 150px;
+        width: 100%;
+    } 
+
+    .img_text{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        margin-bottom: 10%;
+    }
+    #w_b_c{
+        padding: 5%;
+        width: 50%;
+        height: 44px;
+        margin-bottom: 25%;
+    }
+    .icons_text{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+        /* justify-content: space-around; */
+        width: 80%;
+        margin-bottom: 15%;
+        
+    }
+    .icons_text > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .icons_text > div > img{
+        width: 22%;
+        height: 25%;
+        margin-bottom: 15%;
+    
+    }
+    .icons_text > div > span{
+        font-size: 58px;
+    }
+    .icons_text > div > p{
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'DM Sans', sans-serif;
+    }
+    
+    .text_sect_2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 65%;
+        /* height: 79px; */
+        margin-top: 4%;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 176%;
+        letter-spacing: 0.04em;
+        color: #000000;
+        z-index: 1;
+    
+    }
+    .text_sect_2 > .text{
+        color: #907E82;
+    }
+}
