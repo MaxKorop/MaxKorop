@@ -243,6 +243,21 @@ body{
         position:relative;
         top: 26.8%;
     }
+    .crcl_btn_mini{
+        display: flex;
+        width: 18px;
+        height: 18px;
+        background-color: white;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+    .crcl_btn_mini>a{
+        text-decoration: none;
+        color:#D41443 ;
+        font-size: 10px;
+
+    }
 }
 @media screen and (min-width: 768px)and (max-width: 1264px){
     @keyframes menu_anim{
