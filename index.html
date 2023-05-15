@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="style_4.css">
     <link rel="stylesheet" href="style_head.css">
     <link rel="stylesheet" href="style_foot.css">
-    <link rel="stylesheet" href="script.js">
     <title>Ice cream | 🍦</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,17 +27,24 @@
         <!--first layer-->
         <div class="menu">
             <!--logo-->
-                <img id="logo_img" src="img\logo 1.png" alt="logo">
+                <img id="logo_img" src="img\logo 1.png" alt="logo" width="199px" height=" 50px">
             <!--menu-->
-            <nav>
-                <span class="menu_btn"><a href="index.html">Home</a></span>
-                <span class="menu_btn"><a href="#sect_3">About us</a></span>
-                <span class="menu_btn"><a href="#sect_2">How it`s made?</a></span>
-                <span class="menu_btn"><a href="#sect_1">Our products</a></span>
-                <span class="menu_btn"><a href="#sect_4">Contact</a></span>    
+            
+            <nav id="nav" class="off_menu">
+                <div id="exit_btn" onclick="closeMenu()"><img src="img/close.png" alt=""></div>
+                <span onclick="closeMenu()" id="btn_medium_width" class="white_btn"><a href="#sect_1">Buy now  ></a></span>
+                <span onclick="closeMenu()" class="menu_btn"><a href="index.html">Home</a></span>
+                <span onclick="closeMenu()" class="menu_btn"><a href="#sect_3">About us</a></span>
+                <span onclick="closeMenu()" class="menu_btn"><a href="#sect_2">How it`s made?</a></span>
+                <span onclick="closeMenu()" class="menu_btn"><a href="#sect_1">Our products</a></span>
+                <span onclick="closeMenu()" class="menu_btn"><a href="#sect_4">Contact</a></span>
+                   
             </nav>
             <!--"buy now btn"-->
-            <span class="white_btn"><a href="#sect_1">Buy now  ></a></span>
+            <div>
+                <div onclick="openMenu()" id="menu_btn"><img src="img/Group 41.png" alt="" ></div>
+                <span class="white_btn"><a href="#sect_1">Buy now  ></a></span>
+            </div>
         </div>
 
 
@@ -52,8 +58,8 @@
             <div class="header_info_txt">
                 <span class="white_big_txt">ice creame<br>made with<br><span class="red_bigger_txt">passion</span></span>
                 <div>
-                <span class="red_btn"><a href="#sect_1">Products</a></span>
-                <span class="white_btn"><a href="sect_2">How it`s made?</a></span>
+                <span id="pr_h" class="red_btn"><a href="#sect_1">Products</a></span>
+                <span id="HIM_h" class="white_btn"><a href="sect_2">How it`s made?</a></span>
                 </div>
             </div>
             <!--milk-->
@@ -64,7 +70,7 @@
                 <!--txt & btn-->
                 <div>
                     <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do eiusmod tempor<br> incididunt ut labore et</p>
-                    <span class="crcl_btn"><a href="">➜</a></span>
+                    <span class="crcl_btn_mini"><a href="">➜</a></span>
                 </div>
 
             </div>
@@ -140,7 +146,7 @@
             
             <div class="img_text">
                 <img class="img_milk" src="img\sectionbg1 1.png">
-                <img src="img\home-pic4 1.png" alt="cow">
+                <img class="img_cow" src="img\home-pic4 1.png" alt="cow">
                 <div class="text_sect_2">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quaerat totam dolor,<br> a eos, cupiditate praesentium vitae accusantium laboriosam animi vel minima ab <br>quos deserunt fugiat porro perspiciatis, odit beatae!</p>
                     <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum eaque vero maiores possimus <br>iure veniam? Quis iusto sit eaque nihil quos corporis alias quod provident, rem nulla<br> veritatis vitae temporibus.</p>
@@ -174,19 +180,19 @@
             <div class="Sect_3_content">
                 <div id="coment1" class="active">
                     <img src="img\testimonials1 1.png" alt="">
-                    <p><span>"</span>Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit <br> nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
+                    <p><span class="quote">"</span>Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit</p><p>nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
                     <span class="triple_d">...</span>
                     <span class="coment_city">Emily, Los Angeles </span>
                 </div>
                 <div id="coment2" class="off">
                     <img src="img\testimonials1 2.png" alt="">
-                    <p><span>"</span>Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit <br> nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
+                    <p><span class="quote">"</span>Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit</p><p>nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
                     <span class="triple_d">...</span>
                     <span class="coment_city">Jessi, New York </span>
                 </div>
                 <div id="coment3" class="off">
                     <img src="img\testimonials2 1.png" alt="">
-                    <p><span>"</span>Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit <br> nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
+                    <p><span class="quote">"</span>Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit</p><p>nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
                     <span class="triple_d">...</span>
                     <span class="coment_city">Lily, Chicago </span>
                 </div>

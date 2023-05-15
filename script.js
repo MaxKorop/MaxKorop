@@ -53,6 +53,14 @@ function funcBtn(btnWchPress){
     }
     
 }
+let menu = document.getElementById('nav')
+function openMenu(){
+  menu.className = "active_menu"
+}
+function closeMenu(){
+  menu.className = "off_menu_anim"
+  setTimeout(()=>{menu.className="off_menu"}, 1000)
+}
 
 setInterval(()=>{funcBtn(btn); btn++; btn==4? btn=1: null}, 5000
 )

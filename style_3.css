@@ -8,18 +8,28 @@
     flex-direction: column;
     margin-top: 5%;
     font-family: 'DM Sans', sans-serif ;
+    font-size: 14px;
 }
 
 [id*="coment"]{
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-align: center;
+    width: 50%;
 }
 [id*="coment"]>img{
     margin-bottom: 7%;
 }
 [id*="coment"]>p{
+    /* font-family: 'DM Sans', sans-serif ; */
+    border-bottom: solid lightgrey 1px;
     font-weight: 500;
+}
+.quote{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 60px;
+    color: lightgray;
 }
 .btnSl {
     width: 5%;
