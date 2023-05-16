@@ -1,3 +1,10 @@
+@keyframes cow_rotate {
+    0%{ transform: rotatez(0);}
+    25%{transform: rotatez(-25deg);}
+    50%{ transform: rotatez(0);}
+    75%{transform: rotatez(25deg);}
+    100%{ transform: rotatez(0);}
+}
 #sect_2{
     background-color: #FFF5F6;
     margin: 0;
@@ -36,6 +43,21 @@
 }
 .text_sect_2 > .text{
     color: #907E82;
+}
+.img_cow{
+    position: relative;
+    z-index: 11;
+}
+.img_cow:hover{
+    animation: cow_rotate 3s infinite;
+
+}
+.icons_text>div>img{
+    transform: scale(1);
+}
+.icons_text>div>img:hover{
+    transform: scale(1.5);
+    transition: transform 1s ease-in-out;
 }
 @media screen and (min-width: 1264px){
     

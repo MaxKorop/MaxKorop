@@ -53,6 +53,17 @@ function funcBtn(btnWchPress){
     }
     
 }
+
+// let card1= document.getElementById('card_1')
+// let card2 = document.getElementById('card_2')
+// let card3= document.getElementById('card_3')
+// function rotAnim(val){
+//   if(val==1){
+    
+//   }
+
+// }
+
 let menu = document.getElementById('nav')
 function openMenu(){
   menu.className = "active_menu"

@@ -56,3 +56,11 @@
     font-weight: bold;
     font-size: 20px;
 }
+[id*='coment']>img:hover{
+    transform: scale(1.5);
+    transition: transform 1s ease;
+}
+[id*='btnSl']:hover{
+    transform: scale(1.4);
+    transition: transform 0.5s ease;
+}
