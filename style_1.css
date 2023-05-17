@@ -104,7 +104,7 @@
     background-color: #fff;
 }
 
-.crcl_btn > span{
+.crcl_btn > a{
     position: relative;
     font-size: 20px;
     /* top: 7%; */
@@ -268,7 +268,7 @@
         background-color: #fff;
     }
     
-    .crcl_btn > span{
+    .crcl_btn > a{
         position: relative;
         font-size: 20px;
         /* top: 7%; */
